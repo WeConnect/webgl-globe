@@ -354,7 +354,9 @@ DAT.Globe = function(container, opts) {
   function render() {
     zoom(curZoomSpeed);
 
-    rotation.x += (target.x - rotation.x) * 0.1;
+    target.x += incr_rotation.x;
+    target.y += incr_rotation.y;
+    rotation.x += (target.x - rotation.x) * 0.1;;
     rotation.y += (target.y - rotation.y) * 0.1;
     distance += (distanceTarget - distance) * 0.3;
 

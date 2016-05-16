@@ -256,7 +256,7 @@ DAT.Globe = function(container, opts) {
     point.position.z = 200 * Math.sin(phi) * Math.sin(theta);
 
     point.lookAt(mesh.position);
-
+    size = size / 3;
     point.scale.z = Math.max( size, 0.1 ); // avoid non-invertible matrix
     point.updateMatrix();
 

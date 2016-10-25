@@ -409,3 +409,5 @@ DAT.Globe = function(container, opts) {
   return this;
 
 };
+
+window.DAT = window.DAT || DAT;
